@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+</head>
+<html>
+    <body>
+        <div id="my-mirador"/> 
+        <script type="text/javascript">
+        var mirador = Mirador.viewer({
+          "id": "my-mirador",
+          "window": 
+            {
+                "defaultView": "single",
+                "views": [
+                    { key: "single", behaviors: ["indivisuals"]},
+                    { key: 'gallery' }
+                ]
+            },
+          "windows": [
+                {
+                    "loadedManifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00046449/manifest",
+                    "canvasIndex": 139
+                },
+                {
+                    "loadedManifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8452582n/manifest.json",
+                    "canvasIndex": 115
+                },
+                {
+                    "loadedManifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8426780x/manifest.json",
+                    "canvasIndex": 224
+                },
+                {
+                    "loadedManifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8446933h/manifest.json",
+                    "canvasIndex": 43
+                }
+            ]
+        });
+        </script> 
+    </body>
+</html>
