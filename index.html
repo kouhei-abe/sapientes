@@ -8,35 +8,46 @@
         <div id="my-mirador"/> 
         <script type="text/javascript">
         var mirador = Mirador.viewer({
-          "id": "my-mirador",
-          "window": 
+          id: "my-mirador",
+          window: 
             {
-                "defaultView": "single",
-                "views": [
+                defaultView: "single",
+                views: [
                     { key: "single", behaviors: ["indivisuals"]},
                     { key: 'gallery' }
                 ]
             },
-          "windows": [
+          catalog: 
+            [
                 {
-                    "loadedManifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00046449/manifest",
-                    "canvasIndex": 139,
-                    "thumbnailNavigationPosition": "far-right"
+                    $comment: "Paris, BnF, lat. 8500",
+                    manifestId: "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8446933h/manifest.json"
+                }
+            ],
+          windows: [
+                {
+                    $comment: "München, BSB, clm 14456",
+                    loadedManifest: "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00046449/manifest",
+                    canvasIndex: 139,
+                    thumbnailNavigationPosition: "far-right"
                 },
                 {
-                    "loadedManifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8452582n/manifest.json",
-                    "canvasIndex": 115,
-                    "thumbnailNavigationPosition": "far-right"
+                    $comment: "Valenciennes, BM, 404",
+                    loadedManifest: "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8452582n/manifest.json",
+                    canvasIndex: 115,
+                    thumbnailNavigationPosition: "far-right"
                 },
                 {
-                    "loadedManifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8426780x/manifest.json",
-                    "canvasIndex": 224,
-                    "thumbnailNavigationPosition": "far-right"
+                    $comment: "Paris, BnF, lat. 11505",
+                    loadedManifest: "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8426780x/manifest.json",
+                    canvasIndex: 224,
+                    thumbnailNavigationPosition: "far-right"
                 },
                 {
-                    "loadedManifest": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8446933h/manifest.json",
-                    "canvasIndex": 43,
-                    "thumbnailNavigationPosition": "far-right"
+                    $comment: "Paris, BnF, lat. 7671",
+                    loadedManifest: "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10037019f/manifest.json",
+                    canvasIndex: 59,
+                    thumbnailNavigationPosition: "far-right"
                 }
             ]
         });
